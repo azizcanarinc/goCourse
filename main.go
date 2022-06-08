@@ -1,7 +1,7 @@
 package main
 
-import "a/genler"
+import "a/degisgenler"
 
 func main() {
-	genler.Demo1()
+	degisgenler.Demo1()
 }

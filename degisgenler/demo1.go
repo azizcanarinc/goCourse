@@ -1,4 +1,4 @@
-package genler
+package degisgenler
 
 import "fmt"
 
