@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
+	"golesson/arrays"
 	"golesson/conditionals"
 	"golesson/degisgenler"
 	"golesson/loops"
 )
 
+//komudları çalıştırmak için önündeki işaretleri  "//" sil
 func main() {
 	degisgenler.Demo1()
 	fmt.Println()
@@ -46,4 +48,28 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 	loops.Demo4()
+	fmt.Println()
+	fmt.Println()
+	fmt.Println("DİZİLİER 1")
+	fmt.Println()
+	fmt.Println()
+	arrays.Demo1()
+	fmt.Println()
+	fmt.Println()
+	fmt.Println("DİZİLER 2")
+	fmt.Println()
+	fmt.Println()
+	arrays.Demo2()
+	fmt.Println()
+	fmt.Println()
+	fmt.Println("DİZİLER3")
+	fmt.Println()
+	fmt.Println()
+	arrays.Demo3()
+	fmt.Println()
+	fmt.Println()
+	fmt.Println("DİZİLER 4")
+	fmt.Println()
+	fmt.Println()
+	arrays.Demo4()
 }
