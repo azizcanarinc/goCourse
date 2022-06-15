@@ -5,11 +5,11 @@ import "fmt"
 func Demo1() {
 	fmt.Print("merhaba ")
 	fmt.Println("dünya")
-	var metin string = "merhaba alamanya ___ "
+	var metin string = "merhaba türkiye  ___ "
 	fmt.Print(metin)
 	fmt.Print(metin)
-	fmt.Print("merhaba türkiye ")
-	fmt.Println("merhaba türkiye ")
+	fmt.Print(metin)
+	fmt.Println(metin)
 
 	var kdv int = 10
 	fmt.Println(kdv)
