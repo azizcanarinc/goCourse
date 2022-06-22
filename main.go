@@ -5,8 +5,10 @@ import (
 	"golesson/arrays"
 	"golesson/conditionals"
 	"golesson/degisgenler"
+	"golesson/for_range"
 	"golesson/functions"
 	"golesson/loops"
+	"golesson/maps"
 	"golesson/slices"
 )
 
@@ -123,4 +125,28 @@ func main() {
 
 	sayılar := []int{4, 7, 8}
 	fmt.Println(functions.Toplavariadic(sayılar...))
+	fmt.Println()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	fmt.Println()
+	maps.Demo1()
+	fmt.Println()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	fmt.Println()
+	for_range.Demo1()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	for_range.Demo2()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	for_range.Demo3()
 }
