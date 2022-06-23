@@ -9,7 +9,9 @@ import (
 	"golesson/functions"
 	"golesson/loops"
 	"golesson/maps"
+	"golesson/pointers"
 	"golesson/slices"
+	"golesson/structs"
 )
 
 //komudları çalıştırmak için önündeki işaretleri  "//" sil
@@ -149,4 +151,28 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 	for_range.Demo3()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	sayı := 20
+	pointers.Demo1(sayı)
+	fmt.Println("maindeki sayı", sayı)
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	sayılar2 := []int{1, 2, 3}
+	pointers.Demo2(sayılar2)
+	fmt.Println("maindeki sayı : ", sayılar2[0])
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	structs.Demo1()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	structs.Demo2()
 }
