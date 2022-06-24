@@ -3,15 +3,18 @@ package main
 import (
 	"fmt"
 	"golesson/arrays"
+	"golesson/channels"
 	"golesson/conditionals"
 	"golesson/degisgenler"
 	"golesson/for_range"
 	"golesson/functions"
+	"golesson/goroutines"
 	"golesson/loops"
 	"golesson/maps"
 	"golesson/pointers"
 	"golesson/slices"
 	"golesson/structs"
+	"time"
 )
 
 //komudları çalıştırmak için önündeki işaretleri  "//" sil
@@ -175,4 +178,25 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 	structs.Demo2()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	go goroutines.Çiftsayılar()
+	go goroutines.Teksayılar()
+
+	time.Sleep(5 * time.Second)
+	fmt.Println("main bitti")
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	Çiftsayıcn := make(chan int)
+	teksayıcn := make(chan int)
+	go channels.Çiftsayılar(Çiftsayıcn)
+	go channels.Teksayılar(teksayıcn)
+	Çiftsayıtoplam, teksayıtoplam := <-Çiftsayıcn, <-teksayıcn
+	çarpım := Çiftsayıtoplam * teksayıtoplam
+	fmt.Println("çarpım : ", çarpım)
+
 }
