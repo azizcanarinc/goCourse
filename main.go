@@ -9,6 +9,7 @@ import (
 	"golesson/for_range"
 	"golesson/functions"
 	"golesson/goroutines"
+	"golesson/interfaces"
 	"golesson/loops"
 	"golesson/maps"
 	"golesson/pointers"
@@ -50,13 +51,13 @@ func main() {
 	fmt.Println("oyun 1")
 	fmt.Println()
 	fmt.Println()
-	loops.Demo3()
+	// loops.Demo3()
 	fmt.Println()
 	fmt.Println()
 	fmt.Println("oyun 2")
 	fmt.Println()
 	fmt.Println()
-	loops.Demo4()
+	// loops.Demo4()
 	fmt.Println()
 	fmt.Println()
 	fmt.Println("DİZİLİER 1")
@@ -198,5 +199,15 @@ func main() {
 	Çiftsayıtoplam, teksayıtoplam := <-Çiftsayıcn, <-teksayıcn
 	çarpım := Çiftsayıtoplam * teksayıtoplam
 	fmt.Println("çarpım : ", çarpım)
+	fmt.Println()
+	fmt.Println("şekilin alanını hesaplama")
+	fmt.Println()
+	fmt.Println()
+	interfaces.Demo1()
+	fmt.Println()
+	fmt.Println("kredi")
+	fmt.Println()
+	fmt.Println()
+	interfaces.Demo2()
 
 }
