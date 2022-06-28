@@ -5,7 +5,9 @@ import (
 	"golesson/arrays"
 	"golesson/channels"
 	"golesson/conditionals"
+	"golesson/defer_statement"
 	"golesson/degisgenler"
+	"golesson/error_handling"
 	"golesson/for_range"
 	"golesson/functions"
 	"golesson/goroutines"
@@ -209,5 +211,34 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 	interfaces.Demo2()
-
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	defer_statement.B()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	defer_statement.Demo2(10)
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	defer_statement.Demo3()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	error_handling.Demo1()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	interfaces.Demo3()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	error_handling.Demo2()
 }
