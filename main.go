@@ -16,6 +16,7 @@ import (
 	"golesson/maps"
 	"golesson/pointers"
 	"golesson/slices"
+	"golesson/string_functions"
 	"golesson/structs"
 	"time"
 )
@@ -241,4 +242,10 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 	error_handling.Demo2()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	string_functions.Demo1()
+
 }
