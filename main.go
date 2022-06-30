@@ -15,6 +15,7 @@ import (
 	"golesson/loops"
 	"golesson/maps"
 	"golesson/pointers"
+	"golesson/restful"
 	"golesson/slices"
 	"golesson/string_functions"
 	"golesson/structs"
@@ -247,5 +248,14 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 	string_functions.Demo1()
-
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	string_functions.Demo2()
+	fmt.Println()
+	fmt.Println("")
+	fmt.Println()
+	fmt.Println()
+	restful.Demo1()
 }
