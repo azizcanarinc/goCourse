@@ -8,10 +8,10 @@ import (
 )
 
 type todo struct {
-	UserId    int  `json:"userid"`
-	Id        int  `json:"id"`
-	Title     int  `json:"title"`
-	Completed bool `json:"completed"`
+	UserId    int    `json:"userid"`
+	Id        int    `json:"id"`
+	Title     string `json:"title"`
+	Completed bool   `json:"completed"`
 }
 
 func Demo1() {
@@ -29,6 +29,25 @@ func Demo1() {
 	json.Unmarshal(bodyBytes, &todo)
 	fmt.Println(todo)
 }
-func Demo2() {
-	todo := todo{1, 2, "alışvediş yapılacak", folse}
-}
+
+//func Demo2() {
+//	todo := todo{1, 2, "Alışvediş yapılacak", false}
+//	jsonTodo, err := json.Marshal(todo)
+//
+//	response, err := http.Post("http://jsonplaceholder.typicode.com/todos", "aplication/json;charset=utf-8",
+//		bytes.NewBuffer(jsonTodo))
+
+//	if err != nil {
+//		fmt.Println(err)
+//	}
+//	defer response.Body.Close()
+
+//	bodyBytes, _ := ioutil.ReadAll(response.Body)
+
+//	bodystring := string(bodyBytes)
+//	fmt.Println(bodystring)
+
+//	var todoResponse Todo
+//json.Unmarshal(bodyBytes, &todoResponse)
+//	fmt.Println(todoResponse)
+//	}
